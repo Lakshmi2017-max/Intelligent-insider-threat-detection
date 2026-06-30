@@ -1,0 +1,229 @@
+/* General Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* Login Page */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background: #2980b9;
+}
+
+/* Dashboard */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.risk-level {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.risk-level .low { color: green; }
+.risk-level .medium { color: orange; }
+.risk-level .high { color: red; font-weight: bold; }
+
+.activity-section {
+    margin: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.activity-section h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background: #ecf0f1;
+}
+
+/* Risk Banner */
+.alert-banner {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+.high-alert {
+    background: #ff4d4d;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255,0,0,0.6);
+}
+
+.medium-alert {
+    background: #f39c12;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(243,156,18,0.6);
+}
+
+/* Pulse animation for alerts */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Highlight risk levels inline */
+.risk-level .low { color: green; font-weight: bold; }
+.risk-level .medium { color: orange; font-weight: bold; }
+.risk-level .high { color: red; font-weight: bold; text-shadow: 0 0 5px red; }
+
+/* Table hover effect */
+table tbody tr:hover {
+    background: #f9f9f9;
+    transition: background 0.3s ease;
+}
+
+.admin-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.clear-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
+
+.load-btn {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.load-btn:hover {
+    background: #1e8449;
+}
+
+.user-management {
+    margin: 2rem;
+    background: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.user-form {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-form input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.add-btn {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-btn:hover {
+    background: #1e8449;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.protected {
+    color: gray;
+    font-style: italic;
+}
+
+
